@@ -1,0 +1,933 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 200vh; /* Chiều cao để có thể cuộn trang */
+}
+
+.hero {
+    background-image: url('../Media/unnamed-1.png'); /* Thay bằng URL ảnh của bạn */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    position: fixed; /* Đặt navbar ở vị trí cố định */
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    height: 80px;   
+    background-color: rgba(255, 255, 255, 0); /* Màu nền trong suốt ban đầu */
+    transition: background-color 0.3s ease; /* Thời gian chuyển màu */
+    z-index: 1000;
+    border: none;
+    width: 100%;
+}
+
+.navbar.scrolled {
+    background-color: rgb(0, 0, 0); /* Màu nền khi cuộn xuống */
+    box-shadow: 0 2px 5px rgba(41, 41, 41, 0.2);
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff; /* Màu chữ trắng */
+    transition: color 0.3s ease; /* Thời gian chuyển màu chữ */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.chu_menu{
+    padding-bottom: 10px;
+}
+.logo1{
+    margin-top: 10px;
+    height: 23px;
+    width: 100px;
+}
+.logo2{
+    height: 25px;
+    width: 30px;
+}
+.arcane{
+    margin-top: 100px;
+    margin-left: 8%;
+    height: 160px;
+    width: 400px;
+}
+.chu_arcane{
+    position: absolute;
+    margin-left: 4px;
+    margin-top: 50px;
+}
+.chu_arcane1{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 120px;
+}
+.chu_arcane2{
+    color: #8F9E9A;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.nut_trailer{
+    height: 75px;
+    width: 430px;
+    margin-left: 70px;
+    background-color: #C19371; 
+    border-radius: 30px;
+    border: 1px black solid;
+    color: black;
+    font-size:30px ;
+    font-weight: bolder;
+}
+.search-container{
+    margin-left: 80%;
+    margin-bottom: 20px;
+}
+.content {
+    padding: 20px;
+    color: white;
+}
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  .main-news {
+    grid-column: span 1;
+    position: relative;
+  }
+  .main-news img:hover{
+    transform: scale(0.98);  
+    transition: transform .2s;
+    box-shadow: 5px 5px 5px rgba(97, 97, 97, 0.3);
+  }
+  .main-news:hover{
+    cursor: pointer;
+  }
+  .main-news img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .main-news-title {
+    bottom: 20px;
+    left: 20px;
+    font-size: 2rem;
+    color: white;
+    padding: 10px;  
+  }
+  .main-news-tintuc{
+    color: #605F5C;
+    font-size: 20px;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px; 
+  }
+  .sub-news {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+  }
+  .sub-news-item:hover{
+    transform: scale(0.98);  
+    transition: transform .2s;
+    box-shadow: 5px 5px 5px rgba(97, 97, 97, 0.3);
+    cursor: pointer;
+  }
+  .sub-news-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #2E2B28;         
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+  }
+  .sub-news-item img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+.tintuctrangchu{
+    background-color: #0A0A0A;
+    height: 850px;
+}
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    padding-top: 100px;
+  }
+  .section-header h2 {
+    font-size: 50px;
+    margin: 0;
+    color: white;
+  }
+  .view-all-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .view-all-btn:hover {
+    background-color: #555;
+  }
+
+  .trochoi{
+    background-color: #1f1f1f;
+    height: 2400px;
+    
+  }
+  .trochoi h2{
+    font-size: 50px;
+    margin: 0;
+    color: white;
+    width: 100%;
+    padding-top: 100px;
+    margin-left: 20px
+  }
+  .game{
+    width: 500px;
+    height: 250px ;
+    margin-bottom: 2.5%;
+    margin-top: 5%;
+  }
+  .game2{
+    width: 500px;
+    height: 250px ;
+    margin-left: 25%;
+    margin-top: 2.5%;
+  }
+ .anhgame{
+    border-radius: 5px;
+    height: 250px;
+ }
+ .anhgame:hover{
+    border: 1px solid #fff;
+    transition: 0.2s;
+    cursor: pointer;
+ }
+
+ .slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+}
+
+.slide_img:hover{
+    cursor: pointer;
+    border: 1px solid white ;
+    transition: 0.1s;
+    border-radius: 5px;
+}
+
+.prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    left: 10px;
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    right: 10px;
+}
+
+
+.bang_tuyendung{
+    width: 100%;
+}
+.chu_tuyendung{
+    color: #656462;
+    font-size: 30px;
+}
+.annie{
+    width: 700px;
+    height: 500px;
+    border-radius: 5px;
+    display: flex;
+}
+h1{
+    font-size: 50px;
+}
+.nut1{
+    margin-top: 20px;
+    width: 250px;
+    height: 150px;
+    background-color: #f0eeee;
+    display: inline;
+    border: none;
+    border-radius: 15px;
+    margin-left: 20px;
+    font-size: 25px;
+    color: #656462;
+}
+.so_button{
+    color: black;
+    font-size: 60px;
+    font-weight: bolder;
+}
+.nut1:hover{
+    background-color: #CBCBCB;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.nut2{
+    margin-top: 20px;
+    width: 250px;
+    height: 65px;
+    background-color: rgb(221, 42, 42);
+    border: none;
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nut2:hover{
+    background-color: rgb(218, 94, 97);
+    color: rgb(199, 199, 199);
+    transition: 0.1s;
+    cursor: pointer;
+
+}
+
+/*Phan info*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.video-background {
+    position: relative;
+    height: 100vh; /* Chiều cao toàn màn hình */
+    width: 100%;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 52px;
+    text-transform: uppercase;
+    max-width: 770px;
+    margin: 0 auto;
+    line-height: 75px;
+    font-family: 'Riot Sans Latin', Arial, sans-serif;
+}
+
+.content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e64a19;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2em;
+    }
+
+    .content p {
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+}
+.info1{
+    width: 250px;
+    height: 350px ;
+    margin-bottom: 2.5%;
+    margin-top: 5%;
+}
+.tieude_info1{
+    color: #E7E6E3;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    padding-top: 50px;
+}
+.noidung_info1{
+    color: #D1D0CD;
+    font-size: 16px;
+    letter-spacing: .015em;
+    line-height: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+.Info_riot1{
+    background-color: #141212;
+}
+.Logo_info{
+    width: 600px;
+    height: 600px;
+}
+.info2{
+   width: 600px;
+   height: 600px;
+   margin-left: 1%;
+}
+.tieude_info2{
+    padding-top: 180px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 38px;
+    text-transform: uppercase;
+    padding-bottom: 24px;
+}
+.noidung_info2{
+    text-align: justify;
+    letter-spacing: .015em;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.Info_riot3{
+    background-color: #2B2A28;
+}
+.tieude_info3{
+    padding-top: 150px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 38px;
+    text-transform: uppercase;
+    padding-bottom: 24px;
+    text-align: center;
+    color: white;
+}
+.noidung_info3{
+    text-align: center;
+    letter-spacing: .015em;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: white;
+}
+.Logo_info2{
+    width: 600px;
+    height: 600px;
+    padding-top: 50px;
+}
+.Info_button{
+    margin-top: 20px;
+    width: 300px;
+    height: 60px;
+    background-color: rgb(201, 37, 37);
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+}
+.Info_button:hover{
+    transition: 0.1s;
+    background-color:  rgb(192, 70, 70);
+    cursor: pointer;
+}
+
+/*Phan info 2*/
+ /* Thiết lập body và padding/margin mặc định */
+ body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Container cho phần background */
+.background-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Chiều cao full màn hình */
+    background-image: url('../Media/tf-graves-pride-0-1.png'); /* Đường dẫn đến ảnh background */
+    background-size: cover; /* Đảm bảo hình nền bao phủ toàn bộ */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Lớp overlay màu đen với độ trong suốt */
+.background-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ trong suốt 50% */
+    z-index: 1;
+}
+
+/* Nội dung trên background */
+.content2 {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+/* Định dạng tiêu đề và văn bản */
+.content2 h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.content2 p {
+    font-size: 1.2rem;
+}
+
+/* Nút thay đổi */
+.content2 .button1 {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.content2 .button1:hover {
+    background-color: darkred;
+}
+.activities{
+    margin-top: 100px;
+}
+.info_act{
+    margin-top: 20px;
+    font-family: 'Mark Pro', Arial, sans-serif;
+    color: #2b2a29;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-size: 25px;
+    line-height: 1.5;
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.tieude_act{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    margin-top: 50px;
+}
+.act1{
+    width: 300px;
+    height: 550px;
+    background-color: #2B2A29;
+
+}
+.img_act{
+    width: 300px;
+    height: 450px;
+}
+.act_thumb{
+    width: 300px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.act_more{
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.img_act:hover{
+    filter: brightness(50%);
+    transition: 0.1s;
+}
+.act_thumb:hover{
+    text-decoration: underline;
+}
+.act1:hover{
+    cursor: pointer;
+}
+.info_act2{
+    color: #2b2a29;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.maunen_act{
+    background-color: #E7E6E3;
+}
+
+.baocao_act{
+    width: 250px;
+    height: 220px;
+}
+.act2{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.act2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*Phan luoi*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+}
+body{
+    background-color: white;
+}
+.luoi{
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+.chieurongluoi{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hang{
+    display: flex;
+    flex-wrap: wrap;
+} 
+.cot{
+    padding-left:12px ;
+    padding-right: 12px;
+}
+.cot0{
+    display: none;
+}
+.cot1{
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 8.33333%; /*100% chia cho 12 cot*/
+    max-width: 8.33333%;
+}
+.cot2{
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+.cot3{
+    flex:0 0 25% ;
+    max-width: 25%;
+}
+.cot4{
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 33.33333%; 
+    max-width: 33.33333%;
+}
+.cot5{
+    flex:0 0 41.66667% ;
+    max-width: 41.66667%;
+}
+.cot6{
+    flex:0 0 50% ;
+    max-width: 50%;
+}
+.cot7{
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 58.33333%; 
+    max-width: 58.33333%;
+}
+.cot8{
+    flex:0 0 66.66667% ;
+    max-width: 66.66667%;
+}
+.cot9{
+    flex:0 0 75% ;
+    max-width: 75%;
+}
+.cot10{
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 83.33333%; 
+    max-width: 83.33333%;
+}
+.cot11{
+    flex:0 0 91.6% ;
+    max-width: 91.6%;
+}
+.cot12{
+    flex:0 0 100% ;
+    max-width: 100%;
+}
+@media (min-width:744px) and (max-width:1023px){
+    body{
+        background-color: white;
+    }
+    .luoi{
+        width: 100%;
+        display: block;
+    }
+    .chieurongluoi{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .hang{
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    .cot{
+        padding-left:8px ;
+        padding-right: 8px;
+    }
+    .maytinhbangcot0{
+        display: none;
+    }
+    .maytinhbangcot1{
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 8.33333%; /*100% chia cho 12 cot*/
+        max-width: 8.33333%;
+    }
+    .maytinhbangcot2{
+        flex: 0 0 16.66667;
+        max-width: 16.66667%;
+    }
+    .maytinhbangcot3{
+        flex:0 0 25% ;
+        max-width: 25%;
+    }
+    .maytinhbangcot4{
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 33.33333%; 
+        max-width: 33.33333%;
+    }
+    .maytinhbangcot5{
+        flex:0 0 41.66667% ;
+        max-width: 41.66667%;
+    }
+    .maytinhbangcot6{
+        flex:0 0 50% ;
+        max-width: 50%;
+    }
+    .maytinhbangcot7{
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 58.33333%; 
+        max-width: 58.33333%;
+    }
+    .maytinhbangcot8{
+        flex:0 0 66.66667% ;
+        max-width: 66.66667%;
+    }
+    .maytinhbangcot9{
+        flex:0 0 75% ;
+        max-width: 75%;
+    }
+    .maytinhbangcot10{
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 83.33333%; 
+        max-width: 83.33333%;
+    }
+    .maytinhbangcot11{
+        flex:0 0 91.6% ;
+        max-width: 91.6%;
+    }
+    .maytinhbangcot12{
+        flex:0 0 100% ;
+        max-width: 100%;
+    }
+}
+
+@media (max-width:734px){
+    body{
+        background-color: white;
+    }
+    .luoi{
+        width: 100%;
+        display: block;
+    }
+    .chieurongluoi{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .hang{
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    .cot{
+        padding-left:8px ;
+        padding-right: 8px;
+    }
+    .dienthoaicot0{
+        display: none;
+    }
+    .dienthoaicot1{
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 8.33333%; /*100% chia cho 12 cot*/
+        max-width: 8.33333%;
+    }
+    .dienthoaicot2{
+        flex: 0 0 16.66667;
+        max-width: 16.66667%;
+    }
+    .dienthoaicot3{
+        flex:0 0 25% ;
+        max-width: 25%;
+    }
+    .dienthoaicot4{
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 33.33333%; 
+        max-width: 33.33333%;
+    }
+    .dienthoaicot5{
+        flex:0 0 41.66667% ;
+        max-width: 41.66667%;
+    }
+    .dienthoaicot6{
+        flex:0 0 50% ;
+        max-width: 50%;
+    }
+    .dienthoaicot7{
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 58.33333%; 
+        max-width: 58.33333%;
+    }
+    .dienthoaicot8{
+        flex:0 0 66.66667% ;
+        max-width: 66.66667%;
+    }
+    .dienthoaicot9{
+        flex:0 0 75% ;
+        max-width: 75%;
+    }
+    .dienthoaicot10{
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 83.33333%; 
+        max-width: 83.33333%;
+    }
+    .dienthoaicot11{
+        flex:0 0 91.6% ;
+        max-width: 91.6%;
+    }
+    .dienthoaicot12{
+        flex:0 0 100% ;
+        max-width: 100%;
+    }
+}
